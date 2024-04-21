@@ -1,0 +1,416 @@
+.main {
+    width:100vw;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+  }
+  
+  .nav {
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:999;
+    width:100%;
+    height:74px;
+    background-color:#0C1D2C;
+    display:flex;
+    justify-content:space-around;
+    align-items:center;
+    overflow:hidden;
+  }
+  
+  .logo {
+    object-fit:cover;
+    object-position:center;
+  }
+  
+  .link {
+    float:left;
+    color:#ffff;
+    font-size:16px;
+    font-weight:400;
+    margin:0px 12px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:38px;
+  }
+  
+  .red {
+    color:#B84542;
+  }
+  
+  .btn {
+    width:136px;
+    height:38px;
+    background-color:#ffff;
+    font-size:16px;
+    font-weight:300;
+    border-radius:8px;
+    transition:all 0.3s ease-in-out;
+  }
+
+  .btn:hover {
+    background-color:#B84542;
+    color:#ffff;
+  }
+  
+  .current_link {
+    width:78px;
+    border-bottom:1.89px solid #B84542;
+  }
+
+  .gallery {
+    width:100%;
+    height:auto;
+    padding:124px 0px 0px 0px;
+    background:url('/mesh.svg');
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+  }
+
+  .heading {
+    font-size:44px;
+    font-weight:500;
+    color:#0C1D2C;
+ }
+
+ .para {
+    width:100%;
+    font-size:20px;
+    font-weight:400;
+    color:#0C1D2C;
+    text-align:center;
+    margin:16px 0px;
+ }
+
+ .container {
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    margin:78px 0px;
+ }
+
+ .div1 {
+    width:204px;
+ }
+
+ .text {
+    margin-bottom:22px;
+ }
+
+ .pic_1 {
+    width:204px;
+    height:117px;
+    background:url('/1.svg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+ }
+
+ .div2 {
+    width:208px;
+    height:302px;
+    background:url('/left.svg');
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+ }
+
+ .main_pic {
+    width:325px;
+    height:445px;
+    background:url('/singer.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    border-radius:20px;
+    overflow:hidden;
+ }
+
+ .div3 {
+    width:208px;
+    height:302px;
+    background:url('/right.svg');
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+ }
+
+ .features {
+    width:100%;
+    height:380px;
+    background-color:#ffff;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+ }
+
+ .boxes {
+    margin-top:74px;
+    height:280px;
+    display:flex;
+ }
+
+ .box {
+    width:250px;
+    height:100%;
+    background-color:#ffff;
+    box-shadow:0px 0px 24px rgba(0,0,0,0.15);
+    border-radius:16px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+ }
+
+ .logo {
+    object-fit:contain;
+    object-position:center;
+ }
+
+ .name {
+    font-size:18px;
+    font-weight:500;
+    text-align:center;
+    margin-top:24px;
+ }
+
+ .dark_bg {
+    background-color:#0C1D2C;
+    color:#ffff;
+ }
+
+ .display {
+    position:relative;
+    width:100%;
+    height:875px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+ }
+
+ .div {
+    width:100%;
+    display:flex;
+    justify-content:center;
+    align-items:flex-start;
+    margin-top:74px;
+ }
+
+ .left {
+    width:350px;
+ }
+
+ .h {
+    font-size:20px;
+    font-weight:600;
+    color:#0C1D2C;
+ }
+
+ .middle {
+    width:422px;
+    height:502px;
+    background:url('/main.svg');
+    background-repeat:no-repeat;
+    background-size:contain;
+    background-position:center;
+    margin:0px 16px;
+ }
+
+ .right {
+    width:350px;
+ }
+
+ .overlay_img {
+    position:absolute;
+    left:267px;
+    bottom:114px;
+    z-index:1;
+    width:385px;
+    height:292px;
+    background:url('/person.png');
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position:center;
+    border-radius:20px;
+ }
+
+ .dropdown {
+    width:100%;
+    height:100%;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:1000;
+    background-color:#0C1D2C;
+    transition:all 0.4s ease-in-out;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+ }
+
+ .menu {
+    display:none;
+ }
+
+ .cross {
+    position:absolute;
+    top:34px;
+    right:34px;
+ }
+
+ @media only screen and (min-width: 601px) and (max-width: 900px) {
+
+    .features {
+        height:auto;
+        padding:38px 0px;
+    }
+
+    .boxes {
+        height:auto;
+        display:block;
+    }
+
+    .box {
+        width:569px;
+        height:312px;
+    }
+
+    .logo {
+        width:188px;
+        height:188px;
+    }
+
+    .left {
+        padding-left:14px;
+    }
+
+    .middle {
+        background-size:cover;
+        border-radius:20px;
+    }
+
+    .overlay_img {
+        width:295px;
+        height:211px;
+        left:54px;
+    }
+
+    .div1 {
+        display:none;
+    }
+
+ }
+
+ @media only screen and (max-width: 600px) {
+
+    .nav {
+        justify-content:space-between;
+        padding:0px 14px ;
+    }
+
+    .desktop_link {
+        display:none;
+    }
+
+    .div1 {
+        display:none;
+    }
+
+    .container {
+        flex-direction:column;
+        align-items:center;
+    }
+
+    .main_pic {
+        margin:16px 0px;
+    }
+
+    .features {
+        height:auto;
+        padding:38px 0px;
+    }
+
+    .boxes {
+        height:auto;
+        display:block;
+    }
+
+    .box {
+        width:569px;
+        height:312px;
+    }
+
+    .logo {
+        width:188px;
+        height:188px;
+    }
+
+    .display {
+        height:auto;
+        padding:24px;
+    }
+
+    .div {
+        flex-direction:column;
+        margin-top:26px;
+        align-items:center;
+    }
+
+    .overlay_img {
+        display:none;
+    }
+    
+    .heading {
+        font-size:38px;
+        text-align:center;
+    }
+
+    .middle {
+        margin:24px 0px;
+        width:98%;
+        background-size:cover;
+        border-radius:16px;
+    }
+
+    .mob_pic {
+        width:95%;
+        height:528px;
+        background:url('/mob_view.png');
+        background-size:contain;
+        background-position:center;
+        background-repeat:no-repeat;
+    }
+
+    .menu {
+        display:block;
+    }
+
+    .link {
+        float:none;
+        margin:24px 0px;
+        font-size:22px;
+    }
+
+    .current_link {
+        height:54px;
+        width:auto;
+    }
+
+    .btn {
+        width:180px;
+        height:54px;
+        font-size:20px;
+    }
+
+ }
